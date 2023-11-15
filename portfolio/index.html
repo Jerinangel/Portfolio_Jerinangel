@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-----------------------------------starting for head--------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personale Portfolio Website</title>
+    <link rel="stylesheet" href="static resource/style.css">
+<!------------------------ link for icon---------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+<!----------------------------- script for contact form --------------->
+    <script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+  </script>
+  </head>
+<!---------------------------------------Ending of head------------------------>
+<body>
+<!---------------------------------Navbar Section----------------------------->
+     <div class="hero">
+        <nav class="box1">   
+            <a id="logo"href="#">
+                <h1><span>J</span>ERIN<span>A</span>NGEL</h1>
+              </a>
+            <ul>
+
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#SKILLS">SKILLS</a></li>
+                <li><a href="#INTERNSHIP">INTERNSHIP</a></li>
+                <li><a href="#PROJECT">PROJECT</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+<!-------------------------Home section ----------------------------->
+        <section class="home" style= "height:100vh; width:100wh">
+            <div class="home1">
+        <div class="detail">
+             <h1>I'm Jerinangel <span>Pugazhenthi</span></h1>
+             <p>
+               This is my Official portfolio website to show all
+               <br> my work related to UI/UX Design
+             </p> 
+             <a href="static resource/assert/JERINANGEL.pdf">DOWNLOAD CV</a>
+        </div>
+        <div class="images"> 
+            <img src="static resource/images/girl.png" class="girl">
+        </div>
+    </div>
+    </section>
+<!--------------------------------About Section--------------------->
+    <section class="about" id="ABOUT" style="height:100vh; width:100wh">
+        <div class="heading">
+            <h1>Get to<span> know</span> me...</h1>
+            <P>
+                Hello Everyone! I'm Jerinangel Pugazhenthi a passionate UI/UX designer with a flair 
+                for creating immersive digital experiences. With a background in Computer Science 
+                and Engineering, I have dedicated myself to crafting user-centric and visually 
+                appealing designs that leave a lasting impression.I'm working as a freelancer, and I've also done projects for the company. 
+                If you're looking for a UI/UX designer who combines creativity with a user-centric approach, 
+              I'd love to chat. Let's embark on a design journey together and create something extraordinary. 
+            </P>
+            <div class="image">
+                <img src="static resource/images/gabout.png" class="gabout">
+            </div>
+           
+        </div> 
+<!--------------------------------skill Section--------------------->
+    </section>
+    <section  id="SKILLS"class="skills" style="height:100vh; width:100wh">
+            <h1 class="heading">Technical Background</h1>
+            <div class="container">
+                <div class="box">
+                  <div class="shadow"></div>
+                  <div class="content">
+                    <div class="percent" data-text="HTML" style="--num: 98">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h2>98<span>%</span></h2>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="box">
+                  <div class="shadow"></div>
+                  <div class="content">
+                    <div class="percent" data-text="CSS" style="--num: 95">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h2>70<span>%</span></h2>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="box">
+                  <div class="shadow"></div>
+                  <div class="content">
+                    <div class="percent" data-text="JAVA" style="--num: 80">
+                      <div class="dot"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h2>80<span>%</span></h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                    <div class="shadow"></div>
+                    <div class="content">
+                      <div class="percent" data-text="C" style="--num: 80">
+                        <div class="dot"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      <div class="number">
+                        <h2>88<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+    </section>
+<!--------------------------------Internship Section--------------------->
+    <section id="INTERNSHIP"class="intern" style="height:100vh; width:100wh">
+      <h1 class="heading">Internship</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa fa-paint-brush"></i>
+            </div>
+            <h3 style="margin-top: 10px;">Graphic Design</h3>
+            <p>
+              Completed a month internship in Habitat of Humanity Trust and done posters and video making using Figma and Canva.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa fa-desktop"></i>
+            </div>
+            <h3 style="margin-top: 10px;">Web Development</h3>
+            <p>
+            Completed a internship in Exposys Data labs and developed a project on Restaurant Website using Html and CSS.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa fa-code"></i>
+            </div>
+            <h3 style="margin-top: 10px;">Back-End Development</h3>
+            <p>
+              Completed a month internship and developed a project of Book Bot.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa fa-briefcase"></i>
+            </div>
+            <h3 style="margin-top: 10px;">Digital Marketing</h3>
+            <p>
+              Completed a month internship and know how to communicate with people and help to improve the company's online marketing
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--------------------------------Project Section--------------------->
+    <section id="PROJECT"class="project" style="height:100vh; width:100wh">
+      <h1 class="heading">Project</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card1">
+            <div class="icon-wrapper">
+              <a href="https://github.com/naanmudhalvan-SI/PBL-NT-GP--1364-1680513548" ">
+              <i class="fa fa-female" style="color: #fff;"></i>
+              </a>
+            </div>
+            <h3 style="margin-top: 10px;">Breast Cancer Prediction</h3>
+            <p>
+              Prediction of breast cancer using thermal images by machine learning algorithms and deployed into a website.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card1">
+            <div class="icon-wrapper">
+              <a href="https://www.figma.com/file/6LbeOPSC4Ztau8SJ4kCAR3/Untitled?type=design&node-id=0%3A1&mode=design&t=l6zwHFe6lBiwjDa8-1">
+              <i class="fa fa-paint-brush" style="color: #fff;"></i>
+            </a>
+            </div>
+            <h3 style="margin-top: 10px;">Money Transfer App Design</h3>
+            <p>
+              Designed a Money Transfer app and did prototyping and wireframing for the app design using Figma.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card1">
+            <div class="icon-wrapper">
+              <a href="https://github.com/naanmudhalvan-SI/PBL-NT-GP--6621-1680934368"><i class="fa fa-code" style="color: #fff;"></i></a>
+            </div>
+            <h3 style="margin-top: 10px;">Garbage Classification</h3>
+            <p>
+              Classify the garbage based on whether it is degradable or non-degradable using machine learning.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card1">
+            <div class="icon-wrapper">
+              <i class="fa fa-cutlery"style="color: #fff;"></i>
+            </div>
+            <h3 style="margin-top: 10px;">Food Delivery APP Design</h3>
+            <p>
+              Designed a Food Delivery app and used Figma for prototyping and wireframing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--------------------------------contact Section--------------------->
+    <section id="CONTACT"class="contact" style="height:70vh; width:100wh">
+      
+      <div class="container">
+        
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Ready to collaborate or have questions? Reach out through the contact form or email for a quick response.
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                
+                <pre> <i class="fa fa-map-marker" aria-hidden="true" style="color:#1D5D9B;font-size:20px;"></i> 41,Arunagirinathar street,Erode-638051</pre>
+              </div>
+              <div class="information">
+                
+                <pre><i class="fa fa-envelope" aria-hidden="true"style="color:#1D5D9B;font-size:20px;"></i> 2k20cse062@kiot.ac.in</pre>
+              </div>
+              <div class="information">
+                <pre><i class="fa fa-phone" aria-hidden="true"style="color:#1D5D9B;font-size:20px;"></i> +91 6369505827</pre>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>  
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/jeri_pugal?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jerinangel-a-p-b05556213">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container focus">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container focus">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container focus">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container focus textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--------------------------------footer Section--------------------->   
+    <footer class="footer" style="width:100%;overflow: hidden;">
+      <div class="foot">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#ABOUT">About</a></li>
+          <li><a href="#SKILLS">Skills</a></li>
+          <li><a href="#INTERNSHIP">Internship</a></li>
+          <li><a href="#CONTACT">Contact</a></li>
+        </ul>
+      </div>
+      </footer>
+</body> 
+</html>
